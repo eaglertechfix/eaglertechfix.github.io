@@ -25,7 +25,7 @@ function webedition(){
     document.getElementById('gtabs2').style.fontWeight = '700';
     document.getElementById('gtabs2').style.borderLeft = '#008542 solid 4px';
     document.getElementById('dropdown1').style.display = 'flex';
-    // document.getElementById('dropdown2').style.display = 'flex';
+    document.getElementById('dropdown2').style.display = 'flex';
     document.getElementById('dropdown3').style.display = 'none'; // shadow client
     document.getElementById('dropdown4').style.display = 'none';
     document.getElementById('dropdown5').style.display = 'none';
@@ -51,7 +51,7 @@ function moddededition(){
     document.getElementById('gtabs3').style.fontWeight = '700';
     document.getElementById('gtabs3').style.borderLeft = '#008542 solid 4px';
     document.getElementById('dropdown1').style.display = 'none';
-    // document.getElementById('dropdown2').style.display = 'none';
+    document.getElementById('dropdown2').style.display = 'none';
     document.getElementById('dropdown3').style.display = 'none'; // shadow client
     document.getElementById('dropdown4').style.display = 'flex';
     document.getElementById('dropdown5').style.display = 'flex';
@@ -77,7 +77,7 @@ function eaglercontrols(){
     document.getElementById('gtabs4').style.fontWeight = '700';
     document.getElementById('gtabs4').style.borderLeft = '#008542 solid 4px';
     document.getElementById('dropdown1').style.display = 'none';
-    // document.getElementById('dropdown2').style.display = 'none';
+    document.getElementById('dropdown2').style.display = 'none';
     document.getElementById('dropdown3').style.display = 'none'; // shadow client
     document.getElementById('dropdown4').style.display = 'none';
     document.getElementById('dropdown5').style.display = 'none';
