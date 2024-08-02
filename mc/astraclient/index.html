@@ -17,7 +17,10 @@
 			window.addEventListener("load", () => {
 				if(document.location.href.startsWith("file:")) {
 					alert("HTTP please, do not open this file locally, run a local HTTP server and load it via HTTP");
-				}else {
+				}else if (!window.location.href.endsWith("/")) {
+                                        var currentUrl = window.location.href;
+                                        window.location.href = currentUrl + "/";
+                                } else {
 					const relayId = Math.floor(Math.random() * 3);
 					window.eaglercraftXOpts = {
 						demoMode: false,
