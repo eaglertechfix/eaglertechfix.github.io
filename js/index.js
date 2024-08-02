@@ -119,7 +119,7 @@ function eaglercon(){
     document.getElementById('drop').style.display = 'none';
     document.getElementById('mainbutton').classList.remove('playButton');
     document.getElementById('mainbutton').classList.add('playButton2');
-    document.getElementById('playbutton').href = 'https://discord.gg/jqfbqBeASw';
+    document.getElementById('playbutton').href = '';
 }
 
 function dogomobile() {
@@ -147,49 +147,49 @@ function atraclient() {
     document.getElementById('gametitle').innerHTML = 'Astra Client';
     document.getElementById('gameversion').innerHTML = '1.8.8';
     document.getElementById('gameicon').src = './images/m-logo7.png';
-    document.getElementById('playbutton').href = 'mc/astraclient';
+    document.getElementById('playbutton').href = 'mc/astraclient/';
 }
 
 function bettereagler() {
     document.getElementById('gametitle').innerHTML = 'BetterEagler';
     document.getElementById('gameversion').innerHTML = '1.8.8';
     document.getElementById('gameicon').src = './images/m-logo6.png';
-    document.getElementById('playbutton').href = 'mc/bettereagler';
+    document.getElementById('playbutton').href = 'mc/bettereagler/';
 }
 
 function eaglerforge() {
     document.getElementById('gametitle').innerHTML = 'Eaglerforge';
     document.getElementById('gameversion').innerHTML = '1.8.8';
     document.getElementById('gameicon').src = './images/m-logo5.png';
-    document.getElementById('playbutton').href = 'mc/eaglerforge';
+    document.getElementById('playbutton').href = 'mc/eaglerforge/';
 }
 
 function resentclient() {
     document.getElementById('gametitle').innerHTML = 'Resent Client';
     document.getElementById('gameversion').innerHTML = '1.8.8';
     document.getElementById('gameicon').src = './images/m-logo4.png';
-    document.getElementById('playbutton').href = 'mc/resentclient';
+    document.getElementById('playbutton').href = 'mc/resentclient/';
 }
 
 function shadowclient() {
     document.getElementById('gametitle').innerHTML = 'Shadow Client';
     document.getElementById('gameversion').innerHTML = '1.8.8';
     document.getElementById('gameicon').src = './images/m-logo3.png';
-    document.getElementById('playbutton').href = 'mc/shadowclient';
+    document.getElementById('playbutton').href = 'mc/shadowclient/';
 }
 
 function latestrelease() {
     document.getElementById('gametitle').innerHTML = 'Latest release';
     document.getElementById('gameversion').innerHTML = '1.8.8-u35';
     document.getElementById('gameicon').src = './images/m-logo1.png';
-    document.getElementById('playbutton').href = 'mc/1.8.8';
+    document.getElementById('playbutton').href = 'mc/1.8.8/';
 }
 
 function previousrelease() {
     document.getElementById('gametitle').innerHTML = 'Previous release';
     document.getElementById('gameversion').innerHTML = '1.5.2-sp1.01';
     document.getElementById('gameicon').src = './images/m-logo2.png';
-    document.getElementById('playbutton').href = 'mc/1.5.2';
+    document.getElementById('playbutton').href = 'mc/1.5.2/';
 }
 
 function dropdowntoggle(){
