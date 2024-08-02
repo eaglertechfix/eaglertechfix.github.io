@@ -88,39 +88,6 @@ function eaglercontrols(){
     document.getElementById('dropdown10').style.display = 'flex';
     dogomobile()
 }
-function eaglerservers(){
-    resetSelected();
-    resetDefault()
-    document.getElementById('game-bg').style.backgroundImage = '';
-    document.getElementById('game-header').style.display = 'none';
-    document.getElementById('gameedition').innerHTML = 'EAGLERCRAFT SERVERS';
-    document.getElementById('header2').style.display = 'none';
-    document.getElementById('header3').style.display = 'none';
-    document.getElementById('header4').style.display = 'none';
-    document.getElementById('header5').style.display = 'none';
-    document.getElementById('header6').style.display = 'none';
-    document.getElementById('gameselection').style.display = 'none';
-    document.getElementById('gtabs5').style.fontWeight = '700';
-    document.getElementById('gtabs5').style.borderLeft = '#008542 solid 4px';
-}
-function eaglercon(){
-    resetSelected();
-    document.getElementById('game-bg').style.backgroundImage = 'url(./images/eaglercon.jpg)';
-    document.getElementById('game-header').src = './images/eaglercon-title.png';
-    document.getElementById('gameedition').innerHTML = 'EAGLERCON LIVE';
-    document.getElementById('header2').style.display = 'none';
-    document.getElementById('header3').style.display = 'none';
-    document.getElementById('header4').style.display = 'none';
-    document.getElementById('header5').style.display = 'none';
-    document.getElementById('header6').style.display = 'none';
-    document.getElementById('gameselection').style.display = 'block';
-    document.getElementById('gtabs6').style.fontWeight = '700';
-    document.getElementById('gtabs6').style.borderLeft = '#008542 solid 4px';
-    document.getElementById('drop').style.display = 'none';
-    document.getElementById('mainbutton').classList.remove('playButton');
-    document.getElementById('mainbutton').classList.add('playButton2');
-    document.getElementById('playbutton').href = '';
-}
 
 function dogomobile() {
     document.getElementById('gametitle').innerHTML = "FlamedDogo's Mobile UI";
