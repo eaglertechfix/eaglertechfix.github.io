@@ -26,9 +26,9 @@ function webedition(){
     document.getElementById('gtabs2').style.borderLeft = '#008542 solid 4px';
     document.getElementById('dropdown1').style.display = 'flex';
     document.getElementById('dropdown2').style.display = 'flex';
-    // document.getElementById('dropdown3').style.display = 'none'; // shadow client
+    document.getElementById('dropdown3').style.display = 'none'; // shadow client
     document.getElementById('dropdown4').style.display = 'none';
-    document.getElementById('dropdown5').style.display = 'none';
+    //document.getElementById('dropdown5').style.display = 'none';
     // document.getElementById('dropdown6').style.display = 'none'; // better eagler
     // document.getElementById('dropdown7').style.display = 'none'; // astra client
     document.getElementById('dropdown8').style.display = 'none';
@@ -52,9 +52,9 @@ function moddededition(){
     document.getElementById('gtabs3').style.borderLeft = '#008542 solid 4px';
     document.getElementById('dropdown1').style.display = 'none';
     document.getElementById('dropdown2').style.display = 'none';
-    // document.getElementById('dropdown3').style.display = 'none'; // shadow client
+    document.getElementById('dropdown3').style.display = 'none'; // shadow client
     document.getElementById('dropdown4').style.display = 'flex';
-    document.getElementById('dropdown5').style.display = 'flex';
+    //document.getElementById('dropdown5').style.display = 'flex';
     // document.getElementById('dropdown6').style.display = 'none'; // better eagler
     // document.getElementById('dropdown7').style.display = 'none'; // astra client
     document.getElementById('dropdown8').style.display = 'none';
@@ -78,9 +78,9 @@ function eaglercontrols(){
     document.getElementById('gtabs4').style.borderLeft = '#008542 solid 4px';
     document.getElementById('dropdown1').style.display = 'none';
     document.getElementById('dropdown2').style.display = 'none';
-    // document.getElementById('dropdown3').style.display = 'none'; // shadow client
+    document.getElementById('dropdown3').style.display = 'none'; // shadow client
     document.getElementById('dropdown4').style.display = 'none';
-    document.getElementById('dropdown5').style.display = 'none';
+    // document.getElementById('dropdown5').style.display = 'none';
     // document.getElementById('dropdown6').style.display = 'none'; // better eagler
     // document.getElementById('dropdown7').style.display = 'none'; // astra client
     document.getElementById('dropdown8').style.display = 'flex';
