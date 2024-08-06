@@ -26,9 +26,9 @@
                                 } else {
 
 					// %%%%%%%%% launch options %%%%%%%%%%%%
-                    const server1 = await (await fetch(window.location.href + '/api/server1.txt')).text();
-                    const server2 = await (await fetch(window.location.href + '/api/server2.txt')).text();
-                    const server3 = await (await fetch(window.location.href + '/api/server3.txt')).text();
+                    const server1 = await (await fetch(window.location.origin + '/api/server1.txt')).text();
+                    const server2 = await (await fetch(window.location.origin + '/api/server2.txt')).text();
+                    const server3 = await (await fetch(window.location.origin + '/api/server3.txt')).text();
 
 					const relayId = Math.floor(Math.random() * 3);
 					window.eaglercraftXOpts = {
