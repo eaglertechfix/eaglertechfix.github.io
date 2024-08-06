@@ -1,1 +1,1 @@
-wss://mc.240hz.tech
+wss://mc.240hz.tech/
