@@ -17,13 +17,16 @@
 		<script type="text/javascript" src="classes.js"></script>
 		<script type="text/javascript">
 			"use strict";
-			window.addEventListener("load", () => {
+			window.addEventListener("load", async () => {
 				if(document.location.href.startsWith("file:")) {
 					alert("HTTP please, do not open this file locally, run a local HTTP server and load it via HTTP");
 				}else if (!window.location.href.endsWith("/")) {
                                         var currentUrl = window.location.href;
                                         window.location.href = currentUrl + "/";
                                 } else {
+					const server1 = await (await fetch(window.location.origin + '/api/server1.txt')).text();
+                    const server2 = await (await fetch(window.location.origin + '/api/server2.txt')).text();
+                    const server3 = await (await fetch(window.location.origin + '/api/server3.txt')).text();
 					const relayId = Math.floor(Math.random() * 3);
 					window.eaglercraftXOpts = {
 						demoMode: false,
@@ -33,7 +36,9 @@
 						worldsDB: "worlds",
 						logInvalidCerts: true,
 						servers: [
-                            				{ addr: "wss://mc.240hz.tech/", name: "Eaglertech" }
+                            { addr: server1, name: "Eaglertech (Proxy 1)" },
+                            { addr: server2, name: "Eaglertech (Proxy 2)" },
+                            { addr: server3, name: "Eaglertech (Proxy 3)" }
 						],
 						relays: [
 							{ addr: "wss://relay.deev.is/", comment: "lax1dude relay #1", primary: relayId == 0 },
