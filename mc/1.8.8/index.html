@@ -17,7 +17,7 @@
 		<script type="text/javascript" src="js/loader.js"></script>
 		<script type="text/javascript">
 			"use strict";
-			window.addEventListener("load", () => {
+			window.addEventListener("load", async () => {
 				if(document.location.href.startsWith("file:")) {
 					alert("HTTP please, do not open this file locally, run a local HTTP server and load it via HTTP");
 				} else if (!window.location.href.endsWith("/")) {
