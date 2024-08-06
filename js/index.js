@@ -52,7 +52,7 @@ function moddededition(){
     document.getElementById('gtabs3').style.borderLeft = '#008542 solid 4px';
     document.getElementById('dropdown1').style.display = 'none';
     document.getElementById('dropdown2').style.display = 'none';
-    document.getElementById('dropdown3').style.display = 'none'; // shadow client
+    document.getElementById('dropdown3').style.display = 'flex'; // shadow client
     document.getElementById('dropdown4').style.display = 'flex';
     document.getElementById('dropdown5').style.display = 'flex';
     // document.getElementById('dropdown6').style.display = 'none'; // better eagler
