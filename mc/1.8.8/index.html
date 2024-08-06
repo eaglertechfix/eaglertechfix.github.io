@@ -24,11 +24,11 @@
                                         var currentUrl = window.location.href;
                                         window.location.href = currentUrl + "/";
                                 } else {
-					
+
 					// %%%%%%%%% launch options %%%%%%%%%%%%
-                    const server1 = await (await fetch('https://raw.githubusercontent.com/kingofnetflix/kingofnetflix.github.io/master/api/server1.txt')).text();
-                    const server2 = await (await fetch('https://raw.githubusercontent.com/kingofnetflix/kingofnetflix.github.io/master/api/server2.txt')).text();
-                    const server3 = await (await fetch('https://raw.githubusercontent.com/kingofnetflix/kingofnetflix.github.io/master/api/server3.txt')).text();
+                    const server1 = await (await fetch(window.location.href + '/api/server1.txt')).text();
+                    const server2 = await (await fetch(window.location.href + '/api/server2.txt')).text();
+                    const server3 = await (await fetch(window.location.href + '/api/server3.txt')).text();
 
 					const relayId = Math.floor(Math.random() * 3);
 					window.eaglercraftXOpts = {
@@ -48,18 +48,18 @@
 							{ addr: "wss://relay.shhnowisnottheti.me/", comment: "ayunami relay #1", primary: relayId == 2 }
 						]
 					};
-					
+
 					// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-					
+
 					var q = window.location.search;
 					if(typeof q === "string" && q.startsWith("?")) {
 						q = new URLSearchParams(q);
 						var s = q.get("server");
 						if(s) window.eaglercraftXOpts.joinServer = s;
 					}
-					
+
 					main();
-					
+
 				}
 			});
 		</script>
