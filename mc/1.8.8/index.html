@@ -17,13 +17,15 @@
 		<script type="text/javascript" src="js/loader.js"></script>
 		<script type="text/javascript">
 			"use strict";
-			window.addEventListener("load", () => {
+			window.addEventListener("load", async () => {
 				if(document.location.href.startsWith("file:")) {
 					alert("HTTP please, do not open this file locally, run a local HTTP server and load it via HTTP");
 				}else {
-					
+
 					// %%%%%%%%% launch options %%%%%%%%%%%%
-					
+                    const server1 = await fetch('https://raw.githubusercontent.com/kingofnetflix/kingofnetflix.github.io/master/api/server1.txt');
+                    const server2 = await.fetch('https://raw.githubusercontent.com/kingofnetflix/kingofnetflix.github.io/master/api/server2.txt');
+                    const server3 = await.fetch('https://raw.githubusercontent.com/kingofnetflix/kingofnetflix.github.io/master/api/server3.txt');
 					const relayId = Math.floor(Math.random() * 3);
 					window.eaglercraftXOpts = {
 						demoMode: false,
@@ -32,7 +34,9 @@
 						localesURI: "lang/",
 						worldsDB: "worlds",
 						servers: [
-							{ addr: "ws://mc.240hz.tech/", name: "Eaglertech" }
+                            { addr: server1.text();, name: "Eaglertech (Proxy 1)" }
+                            { addr: server2.text();, name: "Eaglertech (Proxy 2)" }
+							{ addr: server3.text();, name: "Eaglertech (Proxy 3)" }
 						],
 						relays: [
 							{ addr: "wss://relay.deev.is/", comment: "lax1dude relay #1", primary: relayId == 0 },
@@ -40,18 +44,18 @@
 							{ addr: "wss://relay.shhnowisnottheti.me/", comment: "ayunami relay #1", primary: relayId == 2 }
 						]
 					};
-					
+
 					// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-					
+
 					var q = window.location.search;
 					if(typeof q === "string" && q.startsWith("?")) {
 						q = new URLSearchParams(q);
 						var s = q.get("server");
 						if(s) window.eaglercraftXOpts.joinServer = s;
 					}
-					
+
 					main();
-					
+
 				}
 			});
 		</script>
