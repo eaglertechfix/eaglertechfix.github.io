@@ -26,11 +26,11 @@ function webedition(){
     document.getElementById('gtabs2').style.borderLeft = '#008542 solid 4px';
     document.getElementById('dropdown1').style.display = 'flex';
     document.getElementById('dropdown2').style.display = 'flex';
-    document.getElementById('dropdown3').style.display = 'none';
+    // document.getElementById('dropdown3').style.display = 'none'; // shadow client
     document.getElementById('dropdown4').style.display = 'none';
     document.getElementById('dropdown5').style.display = 'none';
-    document.getElementById('dropdown6').style.display = 'none';
-    document.getElementById('dropdown7').style.display = 'none';
+    // document.getElementById('dropdown6').style.display = 'none'; // better eagler
+    // document.getElementById('dropdown7').style.display = 'none'; // astra client
     document.getElementById('dropdown8').style.display = 'none';
     document.getElementById('dropdown9').style.display = 'none';
     document.getElementById('dropdown10').style.display = 'none';
@@ -52,11 +52,11 @@ function moddededition(){
     document.getElementById('gtabs3').style.borderLeft = '#008542 solid 4px';
     document.getElementById('dropdown1').style.display = 'none';
     document.getElementById('dropdown2').style.display = 'none';
-    document.getElementById('dropdown3').style.display = 'flex';
+    // document.getElementById('dropdown3').style.display = 'none'; // shadow client
     document.getElementById('dropdown4').style.display = 'flex';
     document.getElementById('dropdown5').style.display = 'flex';
-    document.getElementById('dropdown6').style.display = 'flex';
-    document.getElementById('dropdown7').style.display = 'flex';
+    // document.getElementById('dropdown6').style.display = 'none'; // better eagler
+    // document.getElementById('dropdown7').style.display = 'none'; // astra client
     document.getElementById('dropdown8').style.display = 'none';
     document.getElementById('dropdown9').style.display = 'none';
     document.getElementById('dropdown10').style.display = 'none';
@@ -78,48 +78,15 @@ function eaglercontrols(){
     document.getElementById('gtabs4').style.borderLeft = '#008542 solid 4px';
     document.getElementById('dropdown1').style.display = 'none';
     document.getElementById('dropdown2').style.display = 'none';
-    document.getElementById('dropdown3').style.display = 'none';
+    // document.getElementById('dropdown3').style.display = 'none'; // shadow client
     document.getElementById('dropdown4').style.display = 'none';
     document.getElementById('dropdown5').style.display = 'none';
-    document.getElementById('dropdown6').style.display = 'none';
-    document.getElementById('dropdown7').style.display = 'none';
+    // document.getElementById('dropdown6').style.display = 'none'; // better eagler
+    // document.getElementById('dropdown7').style.display = 'none'; // astra client
     document.getElementById('dropdown8').style.display = 'flex';
     document.getElementById('dropdown9').style.display = 'flex';
     document.getElementById('dropdown10').style.display = 'flex';
     dogomobile()
-}
-function eaglerservers(){
-    resetSelected();
-    resetDefault()
-    document.getElementById('game-bg').style.backgroundImage = '';
-    document.getElementById('game-header').style.display = 'none';
-    document.getElementById('gameedition').innerHTML = 'EAGLERCRAFT SERVERS';
-    document.getElementById('header2').style.display = 'none';
-    document.getElementById('header3').style.display = 'none';
-    document.getElementById('header4').style.display = 'none';
-    document.getElementById('header5').style.display = 'none';
-    document.getElementById('header6').style.display = 'none';
-    document.getElementById('gameselection').style.display = 'none';
-    document.getElementById('gtabs5').style.fontWeight = '700';
-    document.getElementById('gtabs5').style.borderLeft = '#008542 solid 4px';
-}
-function eaglercon(){
-    resetSelected();
-    document.getElementById('game-bg').style.backgroundImage = 'url(./images/eaglercon.jpg)';
-    document.getElementById('game-header').src = './images/eaglercon-title.png';
-    document.getElementById('gameedition').innerHTML = 'EAGLERCON LIVE';
-    document.getElementById('header2').style.display = 'none';
-    document.getElementById('header3').style.display = 'none';
-    document.getElementById('header4').style.display = 'none';
-    document.getElementById('header5').style.display = 'none';
-    document.getElementById('header6').style.display = 'none';
-    document.getElementById('gameselection').style.display = 'block';
-    document.getElementById('gtabs6').style.fontWeight = '700';
-    document.getElementById('gtabs6').style.borderLeft = '#008542 solid 4px';
-    document.getElementById('drop').style.display = 'none';
-    document.getElementById('mainbutton').classList.remove('playButton');
-    document.getElementById('mainbutton').classList.add('playButton2');
-    document.getElementById('playbutton').href = 'https://discord.gg/jqfbqBeASw';
 }
 
 function dogomobile() {
@@ -143,53 +110,32 @@ function redcontroller() {
     document.getElementById('playbutton').href = 'mc/1.8.8/?userscript=irv77-eaglerconsole.js';
 }
 
-function atraclient() {
-    document.getElementById('gametitle').innerHTML = 'Astra Client';
-    document.getElementById('gameversion').innerHTML = '1.8.8';
-    document.getElementById('gameicon').src = './images/m-logo7.png';
-    document.getElementById('playbutton').href = 'mc/astraclient';
-}
-
-function bettereagler() {
-    document.getElementById('gametitle').innerHTML = 'BetterEagler';
-    document.getElementById('gameversion').innerHTML = '1.8.8';
-    document.getElementById('gameicon').src = './images/m-logo6.png';
-    document.getElementById('playbutton').href = 'mc/bettereagler';
-}
-
 function eaglerforge() {
     document.getElementById('gametitle').innerHTML = 'Eaglerforge';
     document.getElementById('gameversion').innerHTML = '1.8.8';
     document.getElementById('gameicon').src = './images/m-logo5.png';
-    document.getElementById('playbutton').href = 'mc/eaglerforge';
+    document.getElementById('playbutton').href = 'mc/eaglerforge/';
 }
 
 function resentclient() {
     document.getElementById('gametitle').innerHTML = 'Resent Client';
     document.getElementById('gameversion').innerHTML = '1.8.8';
     document.getElementById('gameicon').src = './images/m-logo4.png';
-    document.getElementById('playbutton').href = 'mc/resentclient';
-}
-
-function shadowclient() {
-    document.getElementById('gametitle').innerHTML = 'Shadow Client';
-    document.getElementById('gameversion').innerHTML = '1.8.8';
-    document.getElementById('gameicon').src = './images/m-logo3.png';
-    document.getElementById('playbutton').href = 'mc/shadowclient';
+    document.getElementById('playbutton').href = 'mc/resentclient/';
 }
 
 function latestrelease() {
     document.getElementById('gametitle').innerHTML = 'Latest release';
     document.getElementById('gameversion').innerHTML = '1.8.8-u35';
     document.getElementById('gameicon').src = './images/m-logo1.png';
-    document.getElementById('playbutton').href = 'mc/1.8.8';
+    document.getElementById('playbutton').href = 'mc/1.8.8/';
 }
 
 function previousrelease() {
     document.getElementById('gametitle').innerHTML = 'Previous release';
     document.getElementById('gameversion').innerHTML = '1.5.2-sp1.01';
     document.getElementById('gameicon').src = './images/m-logo2.png';
-    document.getElementById('playbutton').href = 'mc/1.5.2';
+    document.getElementById('playbutton').href = 'mc/1.5.2/';
 }
 
 function dropdowntoggle(){

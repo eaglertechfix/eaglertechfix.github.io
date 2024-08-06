@@ -371,11 +371,13 @@ div {
 }
 
 .dropdown4 {
-    bottom: 6rem;
+    /* bottom: 6rem; */ 
+    bottom: 2rem;
 }
 
 .dropdown5 {
-    bottom: 10rem;
+    /* bottom: 10rem; */
+    bottom: 6rem;
 }
 
 .dropdown6 {
