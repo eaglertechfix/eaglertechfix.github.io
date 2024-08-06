@@ -26,9 +26,9 @@
                                 } else {
 					
 					// %%%%%%%%% launch options %%%%%%%%%%%%
-                    const server1 = await fetch('https://raw.githubusercontent.com/kingofnetflix/kingofnetflix.github.io/master/api/server1.txt');
-                    const server2 = await fetch('https://raw.githubusercontent.com/kingofnetflix/kingofnetflix.github.io/master/api/server2.txt');
-                    const server3 = await fetch('https://raw.githubusercontent.com/kingofnetflix/kingofnetflix.github.io/master/api/server3.txt');
+                    const server1 = await (await fetch('https://raw.githubusercontent.com/kingofnetflix/kingofnetflix.github.io/master/api/server1.txt')).text();
+                    const server2 = await (await fetch('https://raw.githubusercontent.com/kingofnetflix/kingofnetflix.github.io/master/api/server2.txt')).text();
+                    const server3 = await (await fetch('https://raw.githubusercontent.com/kingofnetflix/kingofnetflix.github.io/master/api/server3.txt')).text();
 
 					const relayId = Math.floor(Math.random() * 3);
 					window.eaglercraftXOpts = {
@@ -38,9 +38,9 @@
 						localesURI: "lang/",
 						worldsDB: "worlds",
 						servers: [
-                            { addr: server1.text();, name: "Eaglertech (Proxy 1)" }
-							{ addr: server2.text();, name: "Eaglertech (Proxy 2)" }
-							{ addr: server3.text();, name: "Eaglertech (Proxy 3)" }
+                            { addr: server1, name: "Eaglertech (Proxy 1)" }
+							{ addr: server2, name: "Eaglertech (Proxy 2)" }
+							{ addr: server3, name: "Eaglertech (Proxy 3)" }
 						],
 						relays: [
 							{ addr: "wss://relay.deev.is/", comment: "lax1dude relay #1", primary: relayId == 0 },
