@@ -26,7 +26,10 @@
                                 } else {
 					
 					// %%%%%%%%% launch options %%%%%%%%%%%%
-					
+                    const server1 = await fetch('https://raw.githubusercontent.com/kingofnetflix/kingofnetflix.github.io/master/api/server1.txt');
+                    const server2 = await.fetch('https://raw.githubusercontent.com/kingofnetflix/kingofnetflix.github.io/master/api/server2.txt');
+                    const server3 = await.fetch('https://raw.githubusercontent.com/kingofnetflix/kingofnetflix.github.io/master/api/server3.txt');
+
 					const relayId = Math.floor(Math.random() * 3);
 					window.eaglercraftXOpts = {
 						demoMode: false,
@@ -35,7 +38,9 @@
 						localesURI: "lang/",
 						worldsDB: "worlds",
 						servers: [
-							{ addr: "wss://mc.240hz.tech/", name: "Eaglertech" }
+                            { addr: server1.text();, name: "Eaglertech (Proxy 1)" }
+							{ addr: server2.text();, name: "Eaglertech (Proxy 2)" }
+							{ addr: server3.text();, name: "Eaglertech (Proxy 3)" }
 						],
 						relays: [
 							{ addr: "wss://relay.deev.is/", comment: "lax1dude relay #1", primary: relayId == 0 },
