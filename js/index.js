@@ -124,6 +124,13 @@ function resentclient() {
     document.getElementById('playbutton').href = 'mc/resentclient/';
 }
 
+function shadowclient() {
+    document.getElementById('gametitle').innerHTML = 'Shadow Client';
+    document.getElementById('gameversion').innerHTML = '1.8.8';
+    document.getElementById('gameicon').src = './images/m-logo3.png';
+    document.getElementById('playbutton').href = 'mc/shadowclient';
+}
+
 function latestrelease() {
     document.getElementById('gametitle').innerHTML = 'Latest release';
     document.getElementById('gameversion').innerHTML = '1.8.8-u35';
