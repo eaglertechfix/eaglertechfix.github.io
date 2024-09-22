@@ -87,7 +87,7 @@ class ServerEmbed {
 			maxCount: 0,
 			players: []
 		};
-		this.showCracked = true;
+		this.showCracked = false;
 		this.tooltip = "";
 		this.isShowingTooltip = false;
 		this.isTooltipEnabled = true;
@@ -123,11 +123,9 @@ class ServerEmbed {
 		this.redrawTimer = 0;
 	}
 	
-	setShowCracked(b) {
-		if(b != this.showCracked) {
-			this.showCracked = b;
-			this.dirty = true;
-		}
+	setShowCracked() {
+		this.showCracked = false;
+		this.dirty = true;
 	}
 	
 	setShowTooltip(b) {
@@ -534,9 +532,9 @@ class ServerEmbed {
 				if(!mouseIsOverPlayers && this.mouseOver && this.mouseX >= 239 && this.mouseX <= 256
 					&& this.mouseY >= 22 && this.mouseY <= 36) {
 					if(this.currentStatus.serverCracked) {
-						tooltipNewArray = ["Server is cracked"];
+						tooltipNewArray = ["Server is cracked (normal)"];
 					}else {
-						tooltipNewArray = ["Server has login"];
+						tooltipNewArray = ["Server has login (XD)"];
 					}
 				}
 			}
