@@ -133,7 +133,7 @@ function shadowclient() {
 
 function latestrelease() {
     document.getElementById('gametitle').innerHTML = 'Latest release';
-    document.getElementById('gameversion').innerHTML = '1.8.8-u37';
+    document.getElementById('gameversion').innerHTML = '1.8.8-u38';
     document.getElementById('gameicon').src = './images/m-logo1.png';
     document.getElementById('playbutton').href = 'mc/1.8.8/';
 }
